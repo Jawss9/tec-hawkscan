@@ -1,0 +1,129 @@
+/* ============================================================
+   TEC Hawk™ — Network Automation HUD
+   Official HUD Military Theme (RTL + Right Sidebar)
+   ============================================================ */
+
+/* الخلفية العامة */
+body {
+    background-color: #000000;     /* أسود كامل */
+    color: #00FF66;                /* أخضر نيون */
+    font-family: Consolas, monospace;
+    direction: rtl;                /* RTL */
+    margin: 0;
+}
+
+/* الصفحة الكاملة */
+.hawk-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* الهيدر */
+.hawk-header {
+    border-bottom: 2px solid #009944;
+    padding: 14px 22px;
+    font-size: 22px;
+    color: #00FF66;
+}
+
+/* منطقة المحتوى + السايدبار */
+.hawk-main {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;   /* السايدبار يمين */
+}
+
+/* السايدبار (يمين) */
+.hawk-sidebar {
+    width: 260px;
+    border-left: 2px solid #009944;
+    padding: 20px 18px;
+}
+
+.hawk-sidebar-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #00FF66;
+}
+
+.hawk-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hawk-menu li {
+    margin-bottom: 12px;
+}
+
+.hawk-menu a {
+    display: block;
+    text-decoration: none;
+    color: #00FF66;
+    padding: 8px 12px;
+    border: 1px solid #003322;
+    font-size: 15px;
+}
+
+.hawk-menu a:hover {
+    background-color: #003322;
+}
+
+/* المحتوى الرئيسي */
+.hawk-content {
+    flex: 1;
+    padding: 25px;
+    border-right: 2px solid #009944;
+}
+
+/* الفوتر */
+.hawk-footer {
+    border-top: 2px solid #009944;
+    padding: 8px 20px;
+    font-size: 12px;
+    text-align: left;
+    color: #009944;
+}
+
+/* عنوان داخل الصفحة */
+.hawk-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* زر عسكري */
+.hawk-btn {
+    background-color: transparent;
+    color: #00FF66;
+    border: 2px solid #00FF66;
+    font-size: 16px;
+    padding: 8px 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hawk-btn:hover {
+    background-color: #00FF66;
+    color: #000000;
+}
+
+/* جدول عسكري */
+.hawk-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 22px;
+    color: #00FF66;
+    font-size: 14px;
+}
+
+.hawk-table th {
+    border-bottom: 2px solid #009944;
+    padding: 8px;
+    text-align: right;
+}
+
+.hawk-table td {
+    border-bottom: 1px solid #003322;
+    padding: 6px;
+}

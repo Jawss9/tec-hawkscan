@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TEC Hawk™ — Network Automation HUD</title>
+    <link rel="stylesheet" th:href="@{/css/hawkscan.css}">
+</head>
+<body class="hawk-page">
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="hawk-main">
+    <!-- السايد بار يمين -->
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+
+    <!-- المحتوى -->
+    <div class="hawk-content">
+        <div th:insert="~{::content}"></div>
+    </div>
+</div>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

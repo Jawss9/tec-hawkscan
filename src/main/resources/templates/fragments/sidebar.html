@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="hawk-sidebar" th:fragment="sidebar">
+
+    <div class="hawk-sidebar-title">قائمة العمليات</div>
+
+    <ul class="hawk-menu">
+        <li><a th:href="@{/dashboard}">لوحة التحكم</a></li>
+        <li><a th:href="@{/expiry}">فحص اشتراكات ٣ أيام</a></li>
+        <li><a th:href="@{/logs}">سجلات النظام</a></li>
+        <li><a th:href="@{/settings}">إعدادات النظام</a></li>
+    </ul>
+
+</div>
+</body>
+</html>
